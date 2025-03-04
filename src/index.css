@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Add loader animations */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Apply animations using Tailwind classes */
+.loader {
+  animation: rotation 1s linear infinite;
+}
+
+.loader-inner {
+  animation: rotationBack 0.5s linear infinite;
+}
